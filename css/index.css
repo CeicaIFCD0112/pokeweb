@@ -23,7 +23,15 @@ header{
     margin: 10px;
     font-size: 30px;
 }
-
+#menu-movil li:nth-child(-n+2) {
+    /* Estilos que deseas aplicar a los dos primeros elementos */
+    border-right: 1px solid blue;
+}
+#loading{
+    display: block;
+    margin: 0 auto;
+    display: none;
+}
 
 
 /* Media query para tamaños de pantalla más pequeños donde quieres ocultar el h1 */
@@ -42,6 +50,10 @@ header{
     }
     .menu-movil{ 
         display: none;
+    }
+    #menu-movil li:nth-child(-n+2) {
+        /* Estilos que deseas aplicar a los dos primeros elementos */
+        border:none;
     }
     
 }
