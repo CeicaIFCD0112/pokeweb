@@ -6,6 +6,16 @@ header{
     display: flex;
     justify-content: space-between; 
 }
+
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
 .container{
     width: 80%;
     margin:0 auto;
