@@ -1,12 +1,12 @@
-#logo{
-    width: 200px;
+/* Añadiendo la regla para el font-family Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Definiendo el fondo de color rosa muy pálido */
+body {
+    background-color: #ffe6f4; /* Cambia este valor según el tono de rosa que desees */
 }
 
-header{
-    display: flex;
-    justify-content: space-between; 
-}
-
+/* Agregando el estilo para las clases .open-sans-<uniquifier> */
 .open-sans-<uniquifier> {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -16,32 +16,47 @@ header{
     "wdth" 100;
 }
 
+#logo{
+    width: 200px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between; 
+}
+
 .container{
     width: 80%;
     margin:0 auto;
 }
+
 .barras-menu{
     display: none;
 }
+
 .estilo-menu{
     list-style: none;
     display: flex;  
 }
+
 .estilo-menu a{
     text-decoration: none;
     display: block;
     margin: 10px;
     font-size: 30px;
 }
+
 #menu-movil li:nth-child(-n+2) {
     /* Estilos que deseas aplicar a los dos primeros elementos */
     border-right: 1px solid blue;
 }
+
 #loading{
     display: block;
     margin: 0 auto;
     display: none;
 }
+
 #containerpk article{
     width: 20%;
     border: 1px solid blue;
@@ -50,19 +65,25 @@ header{
     flex-direction: column;
     align-items: center;
     margin-bottom: 5px;
+    font-family: sans-serif;
+    font-style: italic;
 }
+
 #containerpk{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 #containerpk article img{
     width: 80px;
 }
+
 .navegacion{
     text-align: right;
     margin-right: 15px;
 }
+
 #next{
     margin-left: 10px;
 }
@@ -96,5 +117,4 @@ header{
         flex-direction: column;
         align-items: center;
     }
-    
 }
