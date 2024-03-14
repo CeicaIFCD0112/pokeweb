@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -27,29 +28,38 @@
             cursor: pointer;
         }
     </style>
+<style>
+    header {
+        text-align: center;
+    }
 
-<body>
-    <div class="container">
-
-        <header>
-            <img id="logo" src="img/logo.jpg" alt="logo">
-            <h1>Pokemon</h1>
-        </header>
-        <hr>
-        <i id="barras-menu" class="barras-menu fa-solid fa-bars"></i>
-        <ul id="menu-movil" class="menu-movil estilo-menu">
-            <li><a href="autor.html">Autor</a></li>
-            <li><a href="descripcion.html">Descripción</a></li>
-            <li><a href="index.html">Principal</a></li>
-        </ul>
-        <div class="main">
-            <img id="loading" src="img/200w.gif" alt="" style="width: 50px; height: 50px;">
-            <p class="navegacion"><span id="previous"><i class="fa-solid fa-backward-step"></i>Previous</span><span id="next">Next<i class="fa-solid fa-forward-step"></i></span></p>
-            <section id="containerpk">
-            </section>
+    header img {
+        display: block;
+        margin: 0 auto;
+    }
+</style>
+   
+    <body>
+        <div class="container">
+            <header>
+                <img id="logo" src="img/pokeapi_big.jpg" alt="logo">
+                <h1>Pokemon</h1>
+            </header>
+            <hr>
+            <i id="barras-menu" class="barras-menu fa-solid fa-bars"></i>
+            <ul id="menu-movil" class="menu-movil estilo-menu">
+                <li><a href="autor.html">Autor</a></li>
+                <li><a href="descripcion.html">Descripción</a></li>
+                <li><a href="index.html">Principal</a></li>
+            </ul>
+            <div class="main">
+                <img id="loading" src="img/200w.gif" alt="" style="width: 50px; height: 50px;">
+                <p class="navegacion"><span id="previous"><i class="fa-solid fa-backward-step"></i>Previous</span><span id="next">Next<i class="fa-solid fa-forward-step"></i></span></p>
+                <section id="containerpk">
+                </section>
+            </div>
         </div>
-    </div>
-    
+
     <!-- Botón flotante para ir al principio -->
     <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
 
@@ -59,6 +69,7 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
-</body>
 
-</html>
+    </body>
+    
+    </html>
